@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"moduleResolution": "node",
+		"module": "ESNext",
+		"target": "ES2019",
+		"lib": ["ESNext"],
+		"declaration": true,
+		"sourceMap": true,
+		"removeComments": false,
+		"alwaysStrict": true,
+		"pretty": true,
+		"outDir": "dist",
+		"incremental": true,
+		"noEmitHelpers": true,
+		"importHelpers": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true
+	},
+	"files": ["src/index.ts"]
+}

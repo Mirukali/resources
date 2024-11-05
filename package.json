@@ -1,0 +1,118 @@
+{
+	"$schema": "http://json.schemastore.org/package",
+	"name": "miruka-resource",
+	"version": "0.1.0",
+	"description": "",
+	"contributors": [
+		"Alikuxac <alikuxac.dev@gmail.com>"
+	],
+	"license": "MIT",
+	"private": true,
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"build": "rimraf dist && tsc",
+		"deploy": "node --unhandled-rejections=strict dist/index.js",
+		"lint": "eslint src --ext .ts",
+		"lint:fix": "eslint src --ext .ts --fix",
+		"prettier": "prettier --write **/*.{ts,js,json,yml,yaml}"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dMirukali/resources.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Mirukali/resources/issues"
+	},
+	"homepage": "https://github.com/Mirukali/resources#readme",
+	"keywords": [
+		"miruka",
+		"discord"
+	],
+	"dependencies": {
+		"discord.js": "^14.16.3"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.5.0",
+		"@commitlint/config-angular": "^19.5.0",
+		"@types/node": "^22.9.0",
+		"@typescript-eslint/eslint-plugin": "^8.13.0",
+		"@typescript-eslint/parser": "^8.13.0",
+		"discord-api-types": "^0.37.103",
+		"eslint": "^9.14.0",
+		"eslint-config-marine": "^9.4.1",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-import": "^2.31.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"husky": "^9.1.6",
+		"lint-staged": "^15.2.10",
+		"prettier": "^3.3.3",
+		"rimraf": "^6.0.1",
+		"typescript": "^5.6.3"
+	},
+	"engines": {
+		"node": ">=16.9.0"
+	},
+	"eslintConfig": {
+		"extends": "marine/prettier/node",
+		"parserOptions": {
+			"project": "./tsconfig.eslint.json"
+		},
+		"rules": {
+			"@typescript-eslint/naming-convention": 0
+		}
+	},
+	"prettier": {
+		"printWidth": 120,
+		"useTabs": true,
+		"singleQuote": true,
+		"quoteProps": "as-needed",
+		"trailingComma": "all",
+		"endOfLine": "lf"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"lint-staged": {
+		"*.js": [
+			"prettier --write"
+		],
+		"*.ts": [
+			"eslint --fix",
+			"prettier --write"
+		],
+		"*.{json,yml,yaml}": [
+			"prettier --write"
+		]
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-angular"
+		],
+		"rules": {
+			"type-enum": [
+				2,
+				"always",
+				[
+					"chore",
+					"build",
+					"ci",
+					"docs",
+					"feat",
+					"fix",
+					"perf",
+					"refactor",
+					"revert",
+					"style",
+					"test",
+					"types",
+					"wip"
+				]
+			]
+		}
+	},
+	"packageManager": "yarn@3.6.0"
+}
