@@ -13,8 +13,8 @@
 	"scripts": {
 		"build": "rimraf dist && tsc",
 		"deploy": "node --unhandled-rejections=strict dist/index.js",
-		"lint": "eslint src --ext .ts",
-		"lint:fix": "eslint src --ext .ts --fix",
+		"lint": "eslint src",
+		"lint:fix": "eslint src --fix",
 		"prettier": "prettier --write **/*.{ts,js,json,yml,yaml}"
 	},
 	"repository": {
@@ -35,6 +35,8 @@
 	"devDependencies": {
 		"@commitlint/cli": "^19.5.0",
 		"@commitlint/config-angular": "^19.5.0",
+		"@eslint/eslintrc": "^3.3.1",
+		"@eslint/js": "^9.23.0",
 		"@types/node": "^22.9.0",
 		"@typescript-eslint/eslint-plugin": "^8.13.0",
 		"@typescript-eslint/parser": "^8.13.0",
