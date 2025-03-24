@@ -17,11 +17,16 @@ const resolveIdentifier = (channelName: string): string => channelName.toUpperCa
 
 const wait = promisify(setTimeout);
 
+const server = process.env.SERVER_ID;
 const deployChannelString = process.env.DEPLOY_CHANNELS;
 const channels = deployChannelString
 	?.trim()
 	.split(/ *, */gm)
 	.map((c) => resolveIdentifier(c));
+
+if (!server) {
+	throw new Error(`[MISSING] No server ID provided`);
+}
 
 if (!channels) {
 	throw new Error(`[MISSING] No deploy channels provided`);
@@ -58,7 +63,7 @@ for (const channel of channels) {
 		if (firstMessage) {
 			part = part.replace(
 				jumpRegex,
-				`https://discord.com/channels/422391405101711360/${firstMessage.channel_id}/${firstMessage.id}`,
+				`https://discord.com/channels/${server}/${firstMessage.channel_id}/${firstMessage.id}`,
 			);
 		}
 		// A raw API response is returned here, not a Message object as the typings indicate

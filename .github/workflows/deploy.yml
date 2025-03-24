@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4.2.2
 
       - name: Install Node v16
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: 18
 
@@ -28,10 +28,12 @@ jobs:
       - name: Run deploy code
         run: yarn deploy
         env:
-          RESOURCES: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_RESOURCES_ID }}/${{ secrets.WEBHOOK_RESOURCES_TOKEN }}
           RULES: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_RULES_ID }}/${{ secrets.WEBHOOK_RULES_TOKEN }}
           ROLES: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_ROLES}}/${{ secrets.WEBHOOK_ROLES_TOKEN }}
           FAQ: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_FAQ}}/${{ secrets.WEBHOOK_FAQ }}
+          ABOUT_US: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_ABOUT_US}}/${{ secrets.WEBHOOK_ABOUT_US_TOKEN }}
+          OFFCIAL_LINKS: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_OFFICIAL_LINKS}}/${{ secrets.WEBHOOK_OFFICIAL_LINKS_TOKEN }}
           WEBHOOK_AVATAR: ${{ secrets.WEBHOOK_AVATAR }}
           WEBHOOK_NAME: ${{ secrets.WEBHOOK_NAME }}
+          SERVER_ID: ${{ secrets.SERVER_ID }}
           DEPLOY_CHANNELS: ${{ github.event.inputs.deployChannels }}

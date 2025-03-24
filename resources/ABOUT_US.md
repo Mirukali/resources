@@ -7,6 +7,7 @@ Founded by **<@289018503606960128>**, Miruka is designed to deliver a unique and
 
 ### Key Features
 - **Blockchain Integration**: Own and trade your in-game assets on the Polygon network.
+- **AI-Generated Art**: Every character, item, and scene is brought to life through stunning AI-generated visuals, giving players an experience that is both captivating and one-of-a-kind.
 - **RPG Mechanics**: Level up your character, complete quests, and engage in epic battles.
 - **Community-Driven**: Join forces with other players, form alliances, and shape the Miruka universe together.
 
