@@ -29,10 +29,10 @@ jobs:
         run: yarn deploy
         env:
           RULES: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_RULES_ID }}/${{ secrets.WEBHOOK_RULES_TOKEN }}
-          ROLES: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_ROLES}}/${{ secrets.WEBHOOK_ROLES_TOKEN }}
-          FAQ: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_FAQ}}/${{ secrets.WEBHOOK_FAQ }}
-          ABOUT_US: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_ABOUT_US}}/${{ secrets.WEBHOOK_ABOUT_US_TOKEN }}
-          OFFCIAL_LINKS: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_OFFICIAL_LINKS}}/${{ secrets.WEBHOOK_OFFICIAL_LINKS_TOKEN }}
+          ROLES: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_ROLES_ID }}/${{ secrets.WEBHOOK_ROLES_TOKEN }}
+          FAQ: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_FAQ_ID }}/${{ secrets.WEBHOOK_FAQ_TOKEN }}
+          ABOUT_US: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_ABOUT_US_ID }}/${{ secrets.WEBHOOK_ABOUT_US_TOKEN }}
+          OFFCIAL_LINKS: https://discord.com/api/webhooks/${{ secrets.WEBHOOK_OFFICIAL_LINKS_ID }}/${{ secrets.WEBHOOK_OFFICIAL_LINKS_TOKEN }}
           WEBHOOK_AVATAR: ${{ secrets.WEBHOOK_AVATAR }}
           WEBHOOK_NAME: ${{ secrets.WEBHOOK_NAME }}
           SERVER_ID: ${{ secrets.SERVER_ID }}
