@@ -4,8 +4,8 @@ import tsPlugin from '@typescript-eslint/eslint-plugin';
 import prettier from 'eslint-config-prettier';
 
 export default [
-    eslint.configs.recommended,
-    prettier,
+	eslint.configs.recommended,
+	prettier,
 	{
 		files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
 		languageOptions: {
@@ -18,8 +18,8 @@ export default [
 			'@typescript-eslint': tsPlugin,
 		},
 		rules: {
-            "no-undef": "off",
-            "no-extra-boolean-cast": "off",
+			'no-undef': 'off',
+			'no-extra-boolean-cast': 'off',
 			'@typescript-eslint/naming-convention': 'off',
 		},
 	},

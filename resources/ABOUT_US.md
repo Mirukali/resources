@@ -1,17 +1,17 @@
-# 🌌 Miruka - A Web3 RPG Bot on Polygon Network 🌌
+# 🌌 Miruka - A Discord RPG Bot 🌌
 
-Welcome to **Miruka** - a Discord bot that brings an immersive RPG experience to the Web3 world! Built on the Polygon network, Miruka combines the best of blockchain technology and RPG gameplay to create an engaging and rewarding experience for players.
+Welcome to **Miruka** - an engaging Discord bot that brings a rich RPG experience directly to your server! Miruka combines world exploration, resource gathering, crafting, mini-games, and community features to create an immersive gameplay experience.
 
 ### About the Project
-Founded by **<@289018503606960128>**, Miruka is designed to deliver a unique and decentralized gaming experience directly through Discord. By leveraging the power of Web3, players can own, trade, and upgrade their in-game assets on the blockchain, all while exploring a rich, fantasy world filled with quests, battles, and adventure.
+Founded by **<@289018503606960128>**, Miruka is designed to deliver a unique and accessible RPG gaming experience right within Discord. Explore a fantasy world filled with quests, battles, resource gathering, and adventure alongside your server community.
 
 ### Key Features
-- **Blockchain Integration**: Own and trade your in-game assets on the Polygon network.
+- **Diverse Economy**: Earn Gold, Miru Points (MP), and era-specific currencies through various in-game activities.
 - **AI-Generated Art**: Every character, item, and scene is brought to life through stunning AI-generated visuals, giving players an experience that is both captivating and one-of-a-kind.
-- **RPG Mechanics**: Level up your character, complete quests, and engage in epic battles.
-- **Community-Driven**: Join forces with other players, form alliances, and shape the Miruka universe together.
+- **RPG Mechanics**: Level up your character, complete quests, gather resources, craft gear, and engage in epic battles.
+- **Community-Driven**: Join forces with other players, form guilds, compete on leaderboards, and shape the Miruka universe together.
 
 ### Get Started
-Type `/start` to begin your journey in Miruka, and let the adventure unfold! Join us as we redefine gaming on Web3, one quest at a time.
+Type `/start` to begin your journey in Miruka, and let the adventure unfold!
 
 Let’s dive into the world of Miruka and see what the future holds! 🌠

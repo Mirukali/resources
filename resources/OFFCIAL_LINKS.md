@@ -1,6 +1,5 @@
 **Miruka**
 
-- Website: <https://miruka.alikuxac.xyz> - Coming soon
+- Website/Wiki: <https://miruka.alikuxac.xyz>
 - Github: <https://github.com/Mirukali>
 - X: <https://x.com/MirukaAlikuxac>
-- Guild.xyz: <https://guild.xyz/miruka>

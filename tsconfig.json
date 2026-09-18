@@ -1,21 +1,29 @@
 {
 	"compilerOptions": {
 		"strict": true,
-		"moduleResolution": "node",
+		"moduleResolution": "bundler",
 		"module": "ESNext",
 		"target": "ES2019",
-		"lib": ["ESNext"],
+		"lib": [
+			"ESNext"
+		],
 		"declaration": true,
 		"sourceMap": true,
 		"removeComments": false,
 		"alwaysStrict": true,
 		"pretty": true,
-		"outDir": "dist",
+		"rootDir": "./src",
+		"outDir": "./dist",
 		"incremental": true,
 		"noEmitHelpers": true,
 		"importHelpers": true,
 		"skipLibCheck": true,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+		"types": [
+			"node"
+		]
 	},
-	"files": ["src/index.ts"]
+	"files": [
+		"src/index.ts"
+	]
 }
